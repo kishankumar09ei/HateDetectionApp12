@@ -48,7 +48,7 @@ tokenizer,model = get_model()
 
 st.title("Empower Your Online Spaces: Detect and Prevent Hate Speech")
 st.subheader("Harness AI to Identify and Manage Hate Speech Across Platforms")
-st.markdown("Welcome to [Your App Name], the innovative solution designed to help you detect and manage hate speech effectively. Our advanced AI algorithms analyze text in real-time to identify harmful content, enabling you to take action and foster a positive online community.")
+st.markdown("Welcome to Our Hate  detection app, the innovative solution designed to help you detect and manage hate speech/Comments/reviews/tweets effectively. Our advanced AI algorithms analyze text in real-time to identify harmful content, enabling you to take action and foster a positive online community ")
 
 user_input = st.text_area('Enter Text to Analyze')
 button = st.button("Analyze")
