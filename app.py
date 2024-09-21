@@ -59,9 +59,6 @@ if user_input and button:
     tokenizer=DistilBertTokenizer.from_pretrained('distilbert-base-uncased')
     clf = create_predictor(tokenizer, max_len)
     prediction = clf(test_sample)
-    prediction[0] = prediction[0]
-    prediction[1] = prediction[1]
-
     st.write(f"Probability of this text to be non hate speech: {np.round(prediction[0],3)}")
     st.write(f"Probability of this text to be hate speech: {np.round(prediction[1], 3)}")
     label_ = np.argmax(np.array(prediction))
