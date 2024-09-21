@@ -60,8 +60,8 @@ if user_input and button:
     clf = create_predictor(tokenizer, max_len)
     prediction = clf(test_sample)
     if prediction[0]>0.2:
-        prediction[0] = prediction[0]-0.15
-        prediction[1] = prediction[1]+0.15
+        prediction[0] = prediction[0]
+        prediction[1] = prediction[1]
 
     st.write(f"Probability of this text to be non hate speech: {np.round(prediction[0],3)}")
     st.write(f"Probability of this text to be hate speech: {np.round(prediction[1], 3)}")
